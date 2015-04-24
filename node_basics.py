@@ -14,10 +14,25 @@ def unorderedListTest():
 	print('a', ol.search('a'))
 	print('B', ol.search('B'))
 
+def unorderedListRemoveTest():
+	ol = UnorderedList()
+	ol.add('A')
+	ol.add('B')
+	ol.add('C')
+	ol.add('D')
+	ol.add('E')
+	ol.add('F')
+	ol.add('G')
+	ol.remove('D')
+	print(ol.items)
+
+
 	
+
 def main():
 	nodeTest()
 	unorderedListTest()
+	unorderedListRemoveTest()
 
 
 if __name__ == "__main__":

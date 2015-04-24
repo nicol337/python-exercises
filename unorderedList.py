@@ -27,4 +27,16 @@ class UnorderedList:
 				return True
 			current_node = current_node.getNext()
 		return False
+
+	def remove(self,item):
+		current_node = self.head
+		previous_node = None
+		while current_node != None:
+			if current_node.data == item:
+				previous_node.setNext(current_node.next)
+				return True
+			previous_node = current_node
+			current_node = current_node.getNext()
+		return False
+
 	
