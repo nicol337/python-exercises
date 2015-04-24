@@ -51,15 +51,8 @@ def unorderedListPopTest():
 
 	ol = UnorderedList()
 	ol.append('A')
-	ol.append('B')
-	ol.append('C')
-	ol.append('D')
+	ol.pop(0)
 	printList(ol)
-	print('remove C')
-	print(ol.pop(2))
-	printList(ol)
-	print('remove D')
-	print(ol.pop(2))
 
 	# print(ol.pop(2))
 	# print(ol.pop(0))
@@ -70,7 +63,7 @@ def unorderedListPopTest():
 	# print(ol.pop(0))
 	# printList(ol)
 	
-def insertTest():
+def unorderedListInsertTest():
 	ol = UnorderedList()
 	ol.insert(0, 'G')
 	printList(ol)
@@ -82,7 +75,7 @@ def insertTest():
 	ol.insert(0, 'F')
 	printList(ol)
 
-def indexTest():
+def unorderedListIndexTest():
 	ol = UnorderedList()
 	ol.insert(0, 'A')
 	ol.append('B')
@@ -111,9 +104,9 @@ def main():
 	# unorderedListTest()
 	# unorderedListRemoveTest()
 	# unorderedListAppendTest()
-	# unorderedListPopTest()
-	# insertTest()
-	indexTest()
+	unorderedListPopTest()
+	# unorderedListInsertTest()()
+	# unorderedListIndexTest()()
 
 
 
