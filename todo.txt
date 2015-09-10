@@ -1,0 +1,7 @@
+dynamic programming
+knapsack
+trees
+graphs
+quicksort
+expressions with stack (infix,post,pre)
+hash algorithms
