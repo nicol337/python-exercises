@@ -1,7 +1,7 @@
 
 change_dict = {}
 
-#recursive
+#recursive with look up table
 def findMinCoins(coin_vals, change):
 	min_coins = change
 	if change in coin_vals:
@@ -12,7 +12,7 @@ def findMinCoins(coin_vals, change):
 		for coin in [c for c in coin_vals if c <=change]:
 			poss_num_coins = 1+ findMinCoins(coin_vals,change-coin)
 			min_coins = min(min_coins,poss_num_coins)
-			change_dict[change] = min_coins
+		change_dict[change] = min_coins
 
 	return min_coins
 

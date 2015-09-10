@@ -28,7 +28,7 @@ class HashTable:
 			return self.data[hash_val]
 		else:
 			num_checked = 0
-			while num_check < self.size:
+			while num_checked < self.size:
 
 				new_hash = getNewHash(hash_val)
 				hash_val = new_hash
