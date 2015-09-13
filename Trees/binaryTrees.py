@@ -36,6 +36,7 @@ class BinaryTree:
 
 
 
+
 def printTree(btree):
 	print(btree.getRootVal())
 	if btree.leftChild:
